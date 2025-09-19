@@ -1,0 +1,110 @@
+<html>
+<head>
+	<title>Domestic Tours</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+img {
+	width:500px;
+	height:200px;
+}
+</style>
+<body>
+
+<nav class="navbar  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+       <a class="navbar-brand"  style="cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;" onclick="doyou()"><img id="logo" src="tourism.jpeg"></a>
+    </div>
+    <script type="text/javascript">
+      function doyou()
+      {
+        var txt;
+    if (confirm("Do you wanna leave the page?")) {
+        window.location = "home.html";
+    } else {
+       return false;
+    }
+    document.getElementById("demo").innerHTML = txt;
+      }
+    </script>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#loginsection"><span class="glyphicon glyphicon-log-in"></span>My Account</a></li>
+        <li><a href="#services">Flights</a></li>
+        <li><a href="#portfolio">Hotels</a></li>
+        <li><a href="#about">Homestays</a></li>
+        <li><a href="#contact">Activities</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><button class="link" onClick='window.open("review.html","","width=500,height=500");'>Write to us!</button></li>
+        <li><a href="#footer1">About</a></li>
+        <li><button class="link" onClick='window.open("contact.html","Contact","width=500,height=500");'>Contact us!</button></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+  <h2 style="">Domestic Tours</h2>
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#goa">Goa</a></li>
+    <li><a data-toggle="pill" href="#manali">Manali</a></li>
+    <li><a data-toggle="pill" href="#andaman">Andaman</a></li>
+    <li><a data-toggle="pill" href="#delhi">Delhi</a></li>
+    </ul>
+  
+  <div class="tab-content">
+    <div id="goa" class="tab-pane fade in active">
+    	<h4>Goa</h4>
+    	<br>
+      <img src="goa.jpeg" alt="Goa">
+      <br>
+      <br>
+      <p>Goa is a favored tourist destination of people from around the world. With its vast stretches of silvery beaches caressed by the sparkling blue Arabian Sea, this city offers its visitors a medley of old-world charm and modern sophistication. The hidden coves of Goa offer an unexplored territory for the adventurer in you. Despite being the smallest state in India, Goa boasts a quality of life which is ranked No. 1 in the country. Goa is home to two World Heritage sights, namely the Bom Jesus Basilica and the churches and convents of Old Goa. The city has a very vibrant nightlife, ranked 6th in the world. Goa flaunts its Portuguese heritage in the many churches, temples, and mansions spread across the city. The Naval Aviation Museum, Fort Aguada, and the Wax Museum, showcasing the history, heritage and culture of India, are a few of the must-see attractions in Goa. The tantalizing Goan cuisine, made with aromatic spices, is yet another draw to this beautiful city. A kaleidoscopic tropical paradise, there is nowhere else in India quite like Goa.</p>
+    </div>
+    <div id="manali" class="tab-pane fade">
+      <h4>Manali</h4>
+      <br>
+      <img src="manali.jpeg" alt="Manali image">
+      <br>
+      <br>
+      <p>Referred to as the Queen of Himachal Pradesh, Manali is an ancient town that is located at an altitude of nearly 2050 meters in Kullu district. Manali is blessed with breathtaking natural beauty that comprises lofty snow-capped peaks of Dhauladhar and Pir Panjal, thick forests, fruit orchards, beautiful hamlets and meadows that are carpeted with lovely wild flowers. Being a high altitude resort town, Manali is an all-year-round destination that offers alluring vistas. An ideal destination for Honeymooners and adventure junkies alike, the town of Manali is a mix of old and new. Being a hub of adventure activities, Manali offers enthralling escapades of skiing, paragliding, trekking, mountaineering and rafting. Get enchanted by the surrealistic snowscape of Rohtang Pass or the Snow Point. Lose yourself in the spiritual realm by paying a visit to Hadimba Temple, Vashisth Bath and Van Vihar. Shopping at the famous Mall Road is fun as it is the most throbbing spot of the city lined with hotels and eateries. With all these attractions and abundance of natural beauty, Manali makes an ideal holiday destination for everyone.</p>
+    </div>
+    <div id="andaman" class="tab-pane fade">
+      <h4>Andaman</h4>
+      <br>
+      <img src="andaman.jpeg" alt="Andaman image">
+      <br>
+      <br>
+            <p>Against a backdrop of the cerulean waters of the Bay of Bengal, Andaman Islands sparkle like emerald jewels, thanks to the lush green tropical foliage. Adorned with long stretches of silvery beaches, these islands are a popular destination for a vacation in the middle of nowhere. Most of these islands are a part of the union territory of India and are home to the only Palaeolithic people in the world. Out of the 300 odd islands comprising the Andaman archipelago, only a few are open to tourists. Havelock Island is the most popular and has the most beautiful beach in Asia, called Radha Nagar Beach. The vision of the blazing red sun sinking beneath the waves, from this beach, is indeed a sight to behold. Ross Island is a paradise for history enthusiasts with its ruins from the time of the British rule. Port Blair, the administrative center of Andaman Islands, is a mixture of modern amenities and old world charm. The Cellular Jail is a testament to the trials of the freedom fighters of India, who were once imprisoned here. Dive into the clear waters enveloping Andaman and lose yourself in an enchanting underwater world, filled with colorful coral reefs. The Andaman Islands in India is an experience like no other! </p>
+    </div>
+     <div id="delhi" class="tab-pane fade">
+      <h4>Delhi</h4>
+      <br>
+      <img src="delhi.jpeg" alt="Delhi image">
+      <br>
+      <br>
+      <p>At first glance, the city of Delhi, home to 16 million people, seems full of mayhem. But underneath this chaotic tapestry lies a magic that is unique to the capital city of India. Known as ‘Indraprasth’ of old, the city has seen the rise and fall of many empires over the centuries. A succession of conquerors has left their mark on Delhi, especially the Mughals, who patronized this city and made it their own. The modern city of Delhi is a blend of medieval forts, beautiful mausoleums, colonial-era buildings, colorful bazaars and technological sophistication. It is the second most populous city in India and is a quintessential melting pot of a medley of cultures and traditions. The Jama Masjid, Qutub Minar, India Gate, Lotus Temple, Red Fort and Raj Ghat are a few of the must-see attractions in Delhi. New Delhi is the seat of power of the Indian Government. Witness the grandeur of Parliament House, Rashtrapati Bhavan and the Supreme Court of India. A trip to Delhi is incomplete without a taste of its unique cuisine, which is best experienced from the street-side vendors of chaats, pav bhajis, and masala tea. </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

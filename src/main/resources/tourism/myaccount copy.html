@@ -1,0 +1,219 @@
+<html>
+<head>
+	<title>My account</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="navbar  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+       <a class="navbar-brand"  style="cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;" onclick="doyou()"><img id="logo" src="tourism.jpeg"></a>
+    </div>
+    <script type="text/javascript">
+      function doyou()
+      {
+        var txt;
+    if (confirm("Do you wanna leave the page?")) {
+        window.location = "home.html";
+    } else {
+       return false;
+    }
+    document.getElementById("demo").innerHTML = txt;
+      }
+    </script>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#services">Flights</a></li>
+        <li><a href="#portfolio">Hotels</a></li>
+        <li><a href="#about">Homestays</a></li>
+        <li><a href="#contact">Activities</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="#footer1">About</a></li>
+        <li><button class="link" onClick='window.open("contact.html","Contact","width=500,height=500");'>Contact us!</button></li> 
+        <li><a href="home.html"><span class="glyphicon glyphicon-user"></span>  Sign out</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<script>
+	function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}​
+</script>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="card" style="width:400px">
+    <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+    	<label for="cardusername">Username</label>
+      <h4 class="card-text" id="cardusername">stc123</h4>
+      <hr>
+      
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+		</div>
+		<div class="col-sm-6">
+		<h3 style="color:#f4511e">Previous/Ongoing trips</h3>
+		<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Trip id</th>
+        <th>Type</th>
+        <th>Destination</th>
+        <th>Starting Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>P123</td>
+        <td>Customised trip</td>
+        <td>Kashmir</td>
+        <td>22/06/2018</td>
+        <td>
+        	<a href="" onclick="alert('You clicked edit.');">Edit   </a>
+        	<div class="vl"></div>
+        	<a href="#" onclick="confirm('Do u want to proceed?')">Cancel trip</a>
+      </tr>
+      <tr>
+        <td>C063</td>
+        <td>Organised trip</td>
+        <td>Thailand</td>
+        <td>22/05/2017</td>
+        <td>
+        	Trip done!
+      </tr>
+      <tr>
+        <td>B234</td>
+        <td>Elderly tour</td>
+        <td>Jaipur</td>
+        <td>22/05/2018</td>
+        <td>
+        	<a href="" onclick="alert('You clicked edit.');">Edit   </a>
+        	<div class="vl"></div>
+        	<a href="#" onclick="confirm('Do u want to proceed?')">Cancel trip</a>
+      </tr>
+      <tr>
+        <td>P235</td>
+        <td>Customised trip</td>
+        <td>France</td>
+        <td>04/07/2018</td>
+        <td>
+        	<a href="" onclick="alert('You clicked edit.');">Edit   </a>
+        	<div class="vl"></div>
+        	<a href="#" onclick="confirm('Do u want to proceed?')">Cancel trip</a>
+      </tr>
+    </tbody>
+  </table>
+		</div>
+
+		<div class="col-sm-3" id="context" contextmenu="mymenu">
+
+		<p>Hello! Connect with us on facebook and twitter</p>
+		<p>Right click on the box to connect</p>
+
+		</div>
+		<menu type="context" id="mymenu">
+  <menuitem label="Refresh" onclick="window.location.reload();" icon="ico_reload.png"></menuitem>
+  <menu label="Share on...">
+    <menuitem label="Twitter" onclick="window.open('http://www.twitter.com');"></menuitem>
+    <menuitem label="Facebook" onclick="window.open('http://www.facebook.com');"></menuitem>
+  </menu>
+  
+</menu>
+	</div>
+</div>
+
+<div class="container text-center" ondrop="drop(event)" ondragover="allowDrop(event)">
+  
+  <script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+<div id="div1" ondrop="drop(event)" ondragover="drop(event)">
+	<p>Drag the image to the box and double click on the image...</p>
+</div> &nbsp;
+<img id="drag1" src="back.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<br>
+<script>
+	$("#drag1").dblclick(function(){
+		alert("This is an alert for double click on image");
+	});
+</script>
+</div>
+<br>
+<br>
+<div class="container" style="border:1px solid black; height:500px"	>
+<p>Upload images of your trip here..</p>
+<input type='file' onchange="readURL(this);" />
+<img id="blah" src="http://placehold.it/180" alt="your image" />
+</div>
+<script>
+	function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+</script>
+
+
+
+<!-- footer -->
+  <footer class="container-fluid text-center" id="footer1">
+  <a href="#carry" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Know more about us...</p>
+  <a href="know.txt" download>Origin of the comapny</a>
+</footer>
+</body>
+</html>

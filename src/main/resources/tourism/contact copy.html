@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Contact us</title>
+<style>
+body {
+	background-color: #ffffe6
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+  
+  <div class="card-deck">
+    <div class="card bg-primary">
+      <div class="card-body text-center">
+        <p class="card-text">Toll free</p>
+        <p class="card-text"><span class="glyphicon glyphicon-phone-alt"></span> 1234567890</p>
+      </div>
+    </div>
+    <div class="card bg-warning">
+      <div class="card-body text-center">
+		<p class="card-text">Whatsapp</p>
+        <p class="card-text"><span class="glyphicon glyphicon-earphone"></span> 0987654321</p>
+      </div>
+    </div>
+    <div class="card bg-success">
+    	<div class="card-body text-center">
+      <p class="card-text">Email</p>
+        <p class="card-text"><span class="glyphicon glyphicon-envelope"></span>  asdfgh@wer.com</p>
+      </div>
+    </div>
+    <div class="card bg-danger">
+    <div class="card-body text-center">
+        <p class="card-text"><span class="glyphicon glyphicon-time"></span><Strong> Office timings</Strong></p>
+        <p class="card-text">Monday to Friday 10am to 8pm</p>
+        <p class="card-text">Saturday 10am to 2pm</p>
+        <p class="card-text"><strong>Sunday closed</strong></p>
+      </div>
+    </div>  
+  </div>
+
+</div>
+
+<br>
+<br>
+<div class="container" >
+  
+  <div class="card bg-info" style="border:1px solid">
+    <div class="card-header">Search for a nearest location:&nbsp;
+<a onclick="prompty()"><span class="glyphicon glyphicon-search"></span></a></div>
+    <div class="card-body" id="locationd"></div> 
+    <div class="card-footer" id="locationrep"></div>
+  </div>
+</div>
+
+<script type="text/javascript">
+	function prompty()
+	{
+		var address="Enter valid location",rep="";
+		var location=prompt("Enter your location:","");
+		if (location == null || location == "") {
+        var txt = "Please enter valid location.";
+    	}
+    	if(location=="pune")
+    	{
+    		address = " Address: Shivajinagar,pune";
+    		rep="Representative: abc jkl"
+    	}
+    	else if(location=="mumbai")
+    	{
+    		address="Address: tajmahal, mumbai";
+    		rep="Representative: dfg rmkdrkm"
+    	}
+    	else if(location=="delhi")
+    	{
+    		address="Address: asdfjkdk";
+    		rep="Representative: wert uvdvds"
+    	}
+    	document.getElementById("locationd").innerHTML = address;
+    	document.getElementById("locationrep").innerHTML = rep;
+	}
+</script>
+
+</body>
+</html>

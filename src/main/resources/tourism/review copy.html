@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title></title>
+	<style>
+body {
+	background-color:  #ffd6cc;
+	color: solid black;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h4>We will definetly respond to your suggestion.</h4>
+
+<form name="review" onsubmit="validate();">
+<label>Enter full name:           </label>&nbsp;
+      <input type="text" name="name" placeholder="Full name">
+      <br>
+      <br>
+      <label>Enter mobile number:           </label>&nbsp;
+      <input type="text" name="mobile" placeholder="Mobile">
+      <br>
+      <br>
+      <label>Enter email address:           </label>&nbsp;
+      <input type="text" name="email" placeholder="Email address">
+      <br>
+      <br>
+      <label>State the suggestion:           </label>&nbsp;
+      <textarea class="form-control" rows="6" id="comment"></textarea>
+      <br>
+     	<button type="submit" class="btn btn-primary">Submit</button>
+     	</form>
+     	<script>
+     	function validate()
+     	{
+     		 if(document.review.name.value == "" || document.review.mobile.value == "" || document.review.email.value == "" || document.review.comment.value == "")
+     		 {
+     		 if(document.review.name.value == "") {
+            alert("Please enter name");
+            document.review.name.focus();
+          	}
+          	if(document.review.mobile.value=="")
+          	{
+          		alert("Please enter mobile:");
+          		document.review.mobile.focus();
+          	}
+          	if(document.review.email.value=="")
+          	{
+          		alert("Please enter email:");
+          		document.review.email.focus();
+          	}
+          	if(document.review.comment.value=="")
+          	{
+          		alert("Please enter suggestion:");
+          		document.review.comment.focus();
+          	}
+          }
+          	else {
+          		alert("Suggestion has been recorded.");
+          	}
+          }
+     	</script>
+</div>
+</body>
+</html>

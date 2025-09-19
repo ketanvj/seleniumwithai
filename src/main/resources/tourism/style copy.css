@@ -1,0 +1,164 @@
+header {
+  background-color:powderblue ; 
+ }
+ #explore {
+  background-color: #ffffe6 ;
+ }
+ body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181 !important;
+  }
+ .navbar {
+      float:right;
+      display:block;
+      margin-bottom: 0; 
+      z-index: 9999;
+      border: 0;
+      font-size: 12px ;
+    line-height: 1.42857143 ;
+      letter-spacing: 4px;
+      border-radius: 0;
+      color: black;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #000000 !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #000000 !important ;
+  }
+  
+    
+  }
+  .vl {
+    border-left: 2px solid ;
+    height: 20px;
+    position: relative;
+}
+
+.secondarynav {
+  
+  z-index: 9999;
+  border: 0;
+  font-size: 15px !important;
+  line-height: 1.42857143!important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+.secondarynav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 25px 25px;
+  text-decoration: none;
+  
+}
+
+.secondarynav a:hover {
+  color: #f4511e !important;
+      background-color: #fff ;
+  text-decoration: none;
+}
+#logo {
+  position:absolute;
+  top:0;
+  left:200px; 
+  width:100px ;
+  height: 100px;
+}
+
+button.link { background:none;border:none; padding-top: 17.5px;}          /*to make text in a clickable format */
+button.link:hover { color:#f4511e !important; }
+#loginsection {
+  background-color: powderblue;
+  border: 1px solid;
+}
+
+select {
+  background:none; 
+  border:none;
+
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: black;
+    padding: 25px 25px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.secondarynav a:hover, .dropdown:hover .dropbtn {
+    color: #f4511e !important;
+    background-color: #fff ;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display:block;
+  }
+
+  #context {
+    background-color: #ffc2b3 !important;
+    color:black;
+    width: 400px;
+    height:200px;
+    border:2px solid;
+  }
+  #div1 {
+
+    color:black;
+    width: 400px;
+    height:200px;
+    border:2px solid;
+  }
+
+  img{
+  max-width:180px;
+}
+input[type=file]{
+padding:10px;
+background:#2d2d2d;}
+.w3-button { color: #000000 !important; border: none; background-color: white !important; }
+.w3-button-hover { color:#f4511e; }
+.w3-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.w3-dropdown-hover:hover .w3-dropdown-content{display:block}
+.w3-dropdown-hover:first-child,.w3-dropdown-click:hover{background-color:white;color:#f4511es}
+.w3-dropdown-hover:hover > .w3-button:first-child,.w3-dropdown-click:hover > .w3-button:first-child{background-color:#ccc;color:#000}
+.w3-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}

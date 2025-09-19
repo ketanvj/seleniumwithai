@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+</head>
+<body>
+<select multiple="multiple" id="sel">
+  <option value="pune">Pune</option>
+  <option value="mumbai">Mumbai</option>
+  <option value="chennai">Chennai</option>
+  <option value="delhi">Delhi</option>
+  <option value="kolkata">Kolkata</option>
+  <option value="hyderabad">Hyderabad</option>
+  <option value="banglore">Banglore</option>
+  <option value="surat">Surat</option>
+  <option value="jaipur">Jaipur</option>
+
+</select>
+<input type="button" value="Get Value" onclick="getvalues()"/>
+<p id="demo"></p>
+
+
+
+<script>
+function getvalues() {
+var text, fLen, i;
+var x=document.getElementById("sel");
+document.getElementById("demo").innerHTML = "hello";
+fLen = x.options.length;
+document.getElementById("demo").innerHTML = fLen;
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+    if(x.options[i].selected ){
+    text += "<li>" + x.options[i].value + "</li>";
+    alert(x.options[i].value);
+  }
+}
+text += "</ul>";
+document.getElementById("demo").innerHTML = text;
+}
+
+
+</script>
+
+</body>
+</html>

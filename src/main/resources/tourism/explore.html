@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Explore</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  #dropdowmy label{
+ display : inline;
+ padding-right : 4px;
+}
+
+#dropdowny select #single{
+ margin-top : 4px;
+}
+  </style>
+</head>
+<body>
+<div id="explore">
+<nav class="navbar  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+       <a class="navbar-brand" style="cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;" onclick="doyou()"><img id="logo" src="tourism.jpeg"></a>
+    </div>
+    <script type="text/javascript">
+      function doyou()
+      {
+        var txt;
+    if (confirm("Do you wanna leave the page?")) {
+        window.location = "home.html";
+    } else {
+       return false;
+    }
+    document.getElementById("demo").innerHTML = txt;
+      }
+    </script>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="tooltip-test" title="Tooltip" data-dismiss="modal" data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span>My Account</a></li>
+        <li><a href="#services">Flights</a></li>
+        <li><a href="#portfolio">Hotels</a></li>
+        <li><a href="#about">Homestays</a></li>
+        <li><a href="#contact">Activities</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="#footer1">About</a></li>
+        <li><button class="link" onClick='window.open("contact.html","Contact","width=500,height=500");'>Contact us!</button></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<form id="drop">
+<div id="dropdowny">
+
+<select name="way" id="single" style="border:none;">
+			<option value="oneway">One way</option>
+			<option value="return">Return</option>
+			
+		</select>&nbsp;
+		<input type="button" value="Submit" onclick="getsingle()"/>
+		<br>
+<label id="trip"></label>
+<label>trip to destination</label>
+<br>
+<br>
+<br>
+
+<select multiple="multiple" id="sel">
+  <option value="pune">Pune</option>
+  <option value="mumbai">Mumbai</option>
+  <option value="chennai">Chennai</option>
+  <option value="delhi">Delhi</option>
+  <option value="kolkata">Kolkata</option>
+  <option value="hyderabad">Hyderabad</option>
+  <option value="banglore">Banglore</option>
+  <option value="surat">Surat</option>
+  <option value="jaipur">Jaipur</option>
+
+</select>
+<input type="button" value="List" onclick="getvalues()"/>
+<p id="cities"></p>
+
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="login">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+   
+
+<form name="loginform" action="myaccount.html" onsubmit="return(validatelogin());">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" id="username" placeholder="Username">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+ </div>
+      <div class="modal-footer text-xs-center">
+       <small> New user?<a href="#" class="tooltip-test" title="Tooltip" data-dismiss="modal" data-toggle="modal" data-target="#signup">   Sign up here!</a> :) </small>
+
+       <!--  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onsubmit="return(Validate());">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+   function validatelogin()
+   {
+
+      if(document.loginform.username.value == "") {
+            alert("Please enter Username");
+            document.loginform.username.focus();
+            return false;
+          }
+
+      if(document.loginform.password.value == "") {
+            alert("Please enter Password");
+            document.loginform.password.focus();
+            return false;
+          }
+
+      if(document.loginform.username.value == "stc123" && document.loginform.password.value == "12345")
+      {
+        return true;
+      }
+      else
+      {
+        alert("Please enter correct credentials...");
+        return false;
+      }
+   }
+ </script> 
+ <script> 
+ function getsingle()
+ {
+ 	var x = document.getElementById("single");
+ 	document.getElementById("trip").innerHTML = x.value;
+
+ }
+function getvalues() {
+var text, fLen, i;
+var x=document.getElementById("sel");
+
+fLen = x.options.length;
+
+text = "<p>Interested cities :</p><ul>";
+for (i = 0; i < fLen; i++) {
+    if(x.options[i].selected ){
+    text += "<li>" + x.options[i].value + "</li>";
+    
+  }
+}
+text += "</ul>";
+document.getElementById("cities").innerHTML = text;
+}
+</script>
+
+
+</div>
+</body>
+</html>
